@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+}
+
+.title{
+    position: fixed;
+    font-family: 'Song Myung', serif;
+    background-color: seagreen;
+}
+
+.frame{
+    position:relative;
+    top: 50px;
+    left: 50px;
+    width: 550pt;
+    height: 500pt;
+    background-color: steelblue;
+}
+.frame .context{
+    font-family: 'Song Myung', serif;
+    font-size: 2em;
+    position: absolute;
+    top: 10pt;
+    left: 10pt;
+    width: 530pt;
+    height: 480pt;
+    background-color: rgb(130, 160, 243);
+}
