@@ -1,0 +1,53 @@
+/*초승달 속성*/
+.moon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 rgb(228, 191, 90);
+}
+
+/*다이아몬드 속성*/
+.diamond{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid rgb(15, 252, 252);
+    position: relative;
+    top: 10px;
+  }
+
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid rgb(15, 252, 252);
+  }
+
+  /*하트 속성*/
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+  .heart:before,
+  .heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 100px;
+    width: 50px;
+    height: 80px;
+    background: rgb(255, 104, 104);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
